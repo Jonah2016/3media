@@ -1,0 +1,125 @@
+.more_post_section .more_post_section_container{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.load_more {
+    width: 99.1%;
+}
+.grid-layout {
+    margin: auto;
+}
+
+.banner-top-thumb-wrap {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid #dbdbdb;
+}
+.banner-top-thumb {
+  width: 82px;
+  height: 4rem;
+  margin-right: 10px;
+}
+.thumb-title {
+  padding: 14px 24px;
+  background: #000;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.post_style2 .post_title {
+    font-size: 1.25rem;
+    line-height: 0.8rem;
+}
+
+@media (min-width: 1241px) {
+    .span-3 {
+      grid-column-end: span 4;
+      grid-row-end: span 4;
+    }
+}
+@media (min-width: 992px) {
+    #fadeShow{ 
+        display: none; 
+    }
+    .ad_banner_fw {
+        height: 20rem;
+    }
+}
+@media (max-width: 1240px) {
+    .span-2 {
+        grid-column-end: span 1;
+        grid-row-end: span 1;
+    }
+    .span-3 {
+        grid-column-end: span 3;
+        grid-row-end: span 1;
+    }
+}
+@media (max-width: 991px) {
+    .span-2 {
+        grid-column-end: span 2;
+        grid-row-end: span 2;
+    }
+    .span-3 {
+        grid-column-end: span 4;
+        grid-row-end: span 2;
+    }
+    .small_post .post_title {
+        font-size: 0.8rem;
+    }
+    .post_style2 .post_title {
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+    }
+}
+@media (max-width: 768px) {
+    .span-2 {
+        grid-column-end: span 4;
+        grid-row-end: span 2;
+    }
+    .span-3 {
+        grid-column-end: span 4;
+        grid-row-end: span 2;
+    }
+    .grid-layout {
+        display: flex;
+    }
+    .small_post .post_title {
+        font-size: 0.8rem;
+    }
+    .post_style2 .post_title {
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+    }
+    .load_more {
+        width: 100%;
+    }
+}
+@media (max-width: 468px) {
+    .span-2 {
+        grid-column-end: span 3;
+        grid-row-end: span 2;
+    }
+    .span-3 {
+        grid-column-end: span 4;
+        grid-row-end: span 2;
+    }
+    .grid-layout {
+        display: flex;
+    }
+    .small_post .post_title {
+        font-size: 0.8rem;
+    }
+    .post_style2 .post_title {
+        font-size: 1rem;
+        line-height: 0.8rem;
+    }
+}

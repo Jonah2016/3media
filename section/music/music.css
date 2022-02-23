@@ -1,0 +1,140 @@
+
+/*--------------------------------------------------------------
+# Music
+--------------------------------------------------------------*/
+
+/* ============== Hero Section =========== */
+.hero_section {
+  height: 100%;
+  width: 100%;
+} 
+.hero_news_post_container {
+    height: 30.38rem;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background-color: #000;
+}
+.news_header h2{
+    font-size: 2.3rem;
+    font-weight: 900;
+    padding-right: 2rem;
+    color: #fff;
+}
+
+.hero_section .post_card_container .post_short_desc_sm a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.hero_news_latest_content{
+    flex: 1;
+    padding: 4rem 4rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.hero_news_latest_title{
+    padding-bottom: 2.5rem;
+}
+.hero_news_latest_title h3 a{
+    font-size: 2.2rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+    color: #fff;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+.hero_news_latest_title h3 a:hover{
+    color: #fe4d55;
+}
+.hero_news_latest_desc h5{
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    color: #fff;
+}
+.hero_news_latest_tags h5{
+    color: #fff;
+    font-size: .92rem;
+    padding-top: 1.5rem;
+}
+.hero_news_latest_tags h5 span{
+    font-style: italic;
+}
+
+.page_heading h2{
+    text-align: left;
+    padding-left: 0.5rem;
+    font-weight: 900;
+    font-size: 2.8rem;
+    color: #000;
+    margin-top: 2.32rem;
+    margin-bottom: 2.32rem;
+}
+.cat_title_container {
+    border-top: 1px solid #404040;
+    width: 100%;
+}
+.cat_news_grid_container{
+    border-top: 0.3px solid lightgray;
+    border-left: 0.3px solid lightgray;
+    border-bottom: 0.3px solid lightgray;
+}
+.post_card_md{
+    border-right: 0.3px solid lightgray;
+    border-bottom: 0.3px solid lightgray;
+}
+.post_short_desc_md{
+    font-size: .98rem !important;
+    font-weight: 600 !important;
+}
+.post_title{
+    font-size: 1.29rem;
+    line-height: 1.6rem;
+    font-weight: 900 !important;
+}
+
+
+@media screen and (max-width: 768px){
+    .hero_section {
+      position: relative;
+      background-color: #000;
+      height: 100%;
+      width: 100vw;
+    } 
+    .hero_news_latest_title h3 a{
+        font-size: 1.98rem;
+        font-weight: 900;
+        line-height: 2.5rem;
+    }
+    .hero_news_latest_desc h5{
+        font-size: 1.02rem;
+        font-weight: 800;
+    }
+    .news_header h2{
+        font-size: 2.03rem;
+        font-weight: 900;
+        text-align: center;
+        color: #fff;
+        padding: 0.6rem;
+    }
+    .page_heading h2{
+        text-align: center;
+        font-size: 1.8rem;
+        color: #000;
+        margin-top: 1.52rem;
+        margin-bottom: 1.52rem;
+    }
+    .hero_section .post_card_sm .img_container_sm{
+        height: 200px;
+    }
+
+}

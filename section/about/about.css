@@ -1,0 +1,308 @@
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+/* ============== Hero Section =========== */
+.hero_banner {
+  position: relative;
+  background-color: #000;
+  height: 86vh;
+  width: 100vw;
+}
+.hero_banner_image_container{
+    width: 100%;
+    height: 86vh;
+    z-index: 0;
+}
+.hero_banner .container {
+    position: relative;
+    z-index: 2;
+}
+.hero_banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.tint
+{
+    content: '';
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(0, 77, 100, .3);
+}
+
+@media screen and (min-width: 1025px){
+    .hero_banner_text{
+       margin-top: -30%; 
+    }
+    .hero_banner_text .hero_banner_title,.hero_banner_title_sm{ 
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        z-index: 11;
+        margin: 0;
+        color: #fff;
+        font-weight: 900;
+        -webkit-text-stroke: 2px lightgrey;
+        text-shadow: 0px 1px 4px black;
+    }
+    .hero_banner_title {
+        line-height: 100%;
+        left: 46.5%;
+        margin-top: -30%; 
+        font-size: 9rem;
+    }
+    .hero_banner_title_sm {
+        line-height: 85%;
+        left: 34.5%;
+        margin-top: 10%; 
+        font-size: 6rem;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px){
+    .hero_banner_text{  
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: -100%;
+        z-index: 11;
+        color: #fff;
+        font-weight: 900;
+        -webkit-text-stroke: 2px lightgrey;
+        text-shadow: 0px 1px 4px black;
+    }
+    .hero_banner_title { 
+        font-size: 5.87rem; 
+        font-weight: 900; 
+        left: 45.3%;
+    }
+    .hero_banner_title_sm {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+} 
+@media screen and (max-width: 767px){
+    .hero_banner_text{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: -100%;
+        z-index: 11;
+        color: #fff;
+        font-weight: 900;
+        -webkit-text-stroke: 2px lightgrey;
+        text-shadow: 0px 1px 4px black;
+    }
+    .hero_banner_title {  
+        font-size: 3.87rem; 
+        font-weight: 900; 
+    }
+    .hero_banner_title_sm {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+}
+
+
+/* ============== Mission Section =========== */
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.mission_section{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.section_title h2{
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+.section_title h2::before {
+    background-color: #fe4d55;
+    content: "";
+    display: block;
+    width: 3.5rem;
+    height: .8rem;
+    margin-bottom: 1.15rem;
+}
+.mission_content p {
+    animation: fadein .5s ease-in-out 0s forwards;
+    font-size: 1.25rem !important;
+    font-weight: 400;
+}
+.mission_content a {
+    font-weight: 700;
+    font-size: 1.12rem !important;
+}
+.mission_content a:hover {
+    color: #fe4d55;
+}
+
+
+@media screen and (max-width: 768px){
+    .mission_section{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .section_title h2{
+        font-size: 2.8rem;
+        font-weight: 900;
+    }
+    .mission_content p{
+        text-align: justify;
+        text-justify: inter-word;
+        font-size: 1.05rem;
+    }
+}
+
+
+/* ========= about section two ==========*/
+.about_section_minor {
+  background-color: #000;
+  padding: 6rem;
+}
+.about_section_minor .content{
+  background-color: #131313;
+  border-radius: 0.52rem 0 0 0.52rem;
+}
+.about_section_minor h4 {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #fff;
+  width: 70%;
+  margin-left: 6rem;
+  font-style: italic;
+}
+.about_section_minor h2 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  letter-spacing: -0.16rem;
+  color: #fff;
+  text-align: right;
+  margin-right: 6rem;
+}
+.about_section_minor .btn-read-more {
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #fe4d55;
+  box-shadow: 0px 3px 2px rgba(0, 77, 100, .3);
+  margin-left: 6rem;
+}
+.about_section_minor .btn-read-more span {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.about_section_minor .btn-read-more i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.about_section_minor .btn-read-more:hover i {
+  transform: translateX(5px);
+}
+
+.right_img_container { 
+  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+  text-align: center;
+  transition: 0.3s;
+  height: 100%;
+}
+.about_section_minor .right_img{
+    border-radius: 0.82rem;
+}
+.right_img_container img {
+  transition: 0.5s;
+  transform: scale(1);
+}
+
+.right_img_container h3 {
+  font-size: 24px;
+  color: #012970;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.right_img_container:hover {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+}
+.right_img_container:hover img {
+  transform: scale(1.1);
+}
+
+.video_container{
+    position: relative;
+    background-color: black;
+    height: 100%;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+
+}
+.video{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+@media screen and (max-width: 768px){
+    .about_section_minor {
+      padding-top: 0.86rem;
+      padding-bottom: 0.86rem;
+      padding-left: 0.1rem;
+      padding-right: 0.1rem;
+    }
+    .about_section_minor .content{
+      border-radius: 0.62rem 0.62rem 0 0 ;
+    }
+    .about_section_minor .right_img{
+        border-radius: 0 0 0.62rem 0.62rem;
+    }
+    .right_img_container img{
+       transform: scale(1); 
+    }
+    
+    .about_section_minor h4 {
+      font-size: 0.95rem;
+      width: 100%;
+      padding-top: 0.62rem;
+      padding-bottom: 0.62rem;
+      margin: auto;
+      text-align: center;
+    }
+    .about_section_minor h2 { 
+      text-align: center;
+      margin: auto;
+    }
+    .about_section_minor .btn-read-more{
+        margin: auto;
+    }
+}
+
+
+/* ===== More news section ===== */
+.more_news_section{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}

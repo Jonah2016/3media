@@ -1,0 +1,302 @@
+/* Center alignment for bootstrap icons (bi classes) */
+/* .bi.bi-center:before {
+    line-height: 1.3 !important;
+} */
+
+
+/* =================== CHECKBOX MODIFICATION  =================  */
+    /* The checkbox container */
+    .check_container {
+        display: block;
+        font-family: Montserrat;
+        position: relative;
+        padding-left: 35px;
+        margin-top: 8px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 18px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    /* Hide the browser's default checkbox */
+    .check_container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #eee;
+    }
+    /* When the checkbox is checked, add a blue background */
+    .check_container input:checked~.checkmark {
+        background-color: #0050c9;
+    }
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark::after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    /* Show the checkmark when checked */
+    .check_container input:checked~.checkmark::after {
+        display: block;
+    }
+    /* Style the checkmark/indicator */
+    .check_container .checkmark::after {
+        left: 7px;
+        top: 2px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+/* =================== // CHECKBOX MODIFICATION  =================  */
+
+
+/* =================== MISCILLANEOUS  ================  */
+
+    /* disable selection */
+    .noselect {
+        -webkit-touch-callout: none;
+        /* iOS Safari */
+        -webkit-user-select: none;
+        /* Safari */
+        -khtml-user-select: none;
+        /* Konqueror HTML */
+        -moz-user-select: none;
+        /* Old versions of Firefox */
+        -ms-user-select: none;
+        /* Internet Explorer/Edge */
+        user-select: none;
+        /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+    }
+
+    /* modal content resizing */
+    .modal-content.ui-resizable {
+      overflow: auto;
+    }
+
+    /* Table action popup */
+    ul.dropdown-menu.dropdown-menu-right.show{
+        min-width: 150px !important;
+    }
+
+    /* Heart pump */
+    @keyframes heartbeat {
+        0% {
+            transform: scale( .75);
+        }
+        20% {
+            transform: scale( 1);
+        }
+        40% {
+            transform: scale( .75);
+        }
+        60% {
+            transform: scale( 1);
+        }
+        80% {
+            transform: scale( .75);
+        }
+        100% {
+            transform: scale( .75);
+        }
+    }
+    span.heart_pump {
+        animation: heartbeat 1s infinite;
+    }
+/* =================== // MISCILLANEOUS  ================  */
+
+
+/* =================== INPUTS  ================  */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="number"]:focus,
+form input[type="date"]:focus,
+form input[type="file"]:focus,
+form input[type="password"]:focus,
+form input[type="tel"]:focus,
+form select:focus,
+form textarea:focus {
+    -webkit-box-shadow: 0 0 2px #c9e5f2 inset;
+    -ms-box-shadow: 0 0 2px #c9e5f2 inset;
+    -o-box-shadow: 0 0 2px #c9e5f2 inset;
+    box-shadow: 0 0 2px #c9e5f2 inset;
+    background-color: #f2f4f5;
+    outline: none;
+    font-weight: 600;
+}
+/* Input transitions on focus */
+::-webkit-input-placeholder {
+    opacity: 1;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+/* Chrome <=56, Safari < 10 */
+:-moz-placeholder {
+    opacity: 1;
+    -moz-transition: opacity .5s;
+    transition: opacity .5s;
+}
+/* FF 4-18 */
+::-moz-placeholder {
+    opacity: 1;
+    -moz-transition: opacity .5s;
+    transition: opacity .5s;
+}
+/* FF 19-51 */
+:-ms-input-placeholder {
+    opacity: 1;
+    -ms-transition: opacity .5s;
+    transition: opacity .5s;
+}
+/* IE 10+ */
+::placeholder {
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+
+/* Modern Browsers */
+*:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+/* Chrome <=56, Safari < 10 */
+*:focus:-moz-placeholder {
+    opacity: 0;
+}
+/* FF 4-18 */
+*:focus::-moz-placeholder {
+    opacity: 0;
+}
+/* FF 19-50 */
+*:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+/* IE 10+ */
+*:focus::placeholder {
+    opacity: 0;
+}
+/* =================== // INPUTS  ================  */
+
+
+
+
+/* =================== TABLES  ================  */
+
+.table>thead>tr>th {
+    border-bottom: 1px solid #e6e7e8;
+    vertical-align: middle;
+    height: 25px;
+}
+
+.table>tbody>tr>td {
+    vertical-align: middle;
+    height: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.table thead th {
+    border-top: 0;
+    border-bottom-width: 1px;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.table tfoot th {
+    font-size: 12px;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.table td span.badge {
+    font-size: 14px;
+    padding: 3px;
+}
+
+.table td {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px;
+    color: rgb(17, 17, 17);
+}
+
+.table td img {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+}
+
+.table.table-borderless {
+    border: none;
+}
+
+.dataTables_wrapper .dt-buttons .btn {
+    background: #435ebe;
+    border-color: #f3f3f3;
+    border-radius: 5.6px;
+    border-bottom-style: solid;
+    color: white;
+    padding: 8px;
+}
+.dataTables_wrapper .dt-buttons .btn:hover {
+    color: white;
+    background: #3252c1;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+    padding-top: 20px;
+}
+.dataTables_wrapper .dataTables_info {
+    font-size: 0.875rem;
+}
+div.dataTables_wrapper div.dataTables_length label {
+    margin-top: 8px;
+    padding-bottom: 4px;
+}
+
+
+/* =================== // TABLES  ================  */
+
+div .list_item li {
+    list-style-type: none;
+    background-color: #efefef;
+    border: 2px solid #fff;
+    padding: 2px;
+    transition: background-color 0.3s ease;
+    transform: translateY(500%);
+}
+
+div .list_item li:hover {
+    background-color: #fff;
+}
+
+
+/* Choose the max number of visible rows for your situation */
+
+.list_item li {
+    animation: delayedEntry 0.2s cubic-bezier(0.05, 0.58, 0.32, 1) forwards;
+    animation-delay: .1s;
+}
+

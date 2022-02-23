@@ -1,0 +1,133 @@
+/* Hero section */
+.videos_hero_section {
+    width: 100%;
+    height: 80%;
+    margin: auto;
+} 
+.videos_hero_section .videos_section_container {
+    width: 90%;
+    height: 80%;
+    padding: 2rem 1.8rem;
+
+} 
+
+.videos_hero_section .videos_section_container .video_section_show_box{
+    margin-top: 1.35rem;
+    margin-bottom: 1.35rem;
+}
+#vid_frame {
+     width: 100%; 
+     height: 70vh;
+}
+.vid_list_container{
+    max-height: 70vh;
+    width: 100%; 
+}
+
+.video_infocard_section{
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.video_infocard_section .show_card_thumbnail{
+    height: 20rem; 
+}
+.video_infocard_section .video_infocard_container {
+    width: 90%;
+    margin: auto;
+    overflow-x: hidden;
+} 
+.video_infocard_section .video_category, .video_title, .video_full_description {
+    padding-bottom: 1.2rem;
+    width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+}
+.video_infocard_section .video_category p{
+    font-size: .75rem;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #000;
+    text-transform: uppercase;
+}
+.video_infocard_section .video_title h3{
+    font-size: 3.58rem;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #000;
+}
+
+.more_category_video_container{
+    width: 90%;
+    margin: auto;
+} 
+.video_infocard_section .video_img_caption{
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+.video_comment_container {
+    margin: auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+ .comment_button_container:focus{
+     text-decoration: none;
+     outline: none;
+ }
+ .comment_button_container button{
+     text-decoration: none;
+     outline: none;
+ }
+ .video_comment_container .com_sec_heading {
+     text-align: left;
+     font-weight: 900;
+     font-size: 2.2rem;
+     color: #000;
+     margin-top: 1.32rem;
+     margin-bottom: 0.62rem;
+     padding-left: 0;
+ }
+
+/* Media query for mobiles */
+@media screen and (max-width: 786px){
+    .videos_hero_section {
+        width: 100%;
+        height: 80%;
+    } 
+    .videos_hero_section .videos_section_container {
+        width: 100%;
+        height: 80%;
+    } 
+    #vid_frame {
+         height: 30vh !important;
+    }
+    .vid_list_container{
+        max-height: 90% !important;
+        margin: auto ;
+    }
+    .video_infocard_section .video_title h3{
+        font-size: 2.18rem;
+        font-weight: 900;
+        line-height: 1.2;
+        color: #000;
+    }
+
+    .video_img_caption{
+        font-size: 0.65rem;
+        font-style: italic;
+    }
+
+    .video_comment_container {
+        margin: auto;
+        width: 100%;
+    }
+    .video_comment_container .com_sec_heading {
+        font-size: 2.12rem;
+        line-height: 2.2rem;
+        width: 100%;
+        padding-left: 0.18rem;
+        padding-right: 0.18rem;
+    }
+
+}

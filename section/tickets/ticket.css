@@ -1,0 +1,231 @@
+@media (min-width: 992px) {
+    #fadeShow{ 
+        display: none; 
+    }
+}
+.ticketing{
+    background-color:whitesmoke;
+}
+.instruction_title{
+    border-bottom:1px solid #c1c1c1;
+    background-color:white;
+}
+.instruction_texts{
+    text-align: center;
+}
+.instruction_title_active{
+    background-color:#fe4d55; 
+    text-align: center;
+}
+.ticket_row{
+    background-color:white; 
+    border-radius:0.3rem;
+}
+.event_info{
+    border-bottom:1px solid #c1c1c1;
+    background-color:white;
+}
+.ticketInfo{
+    margin-left: 10rem;
+}
+.ticketInfo h3{
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding-top: 0.3rem;
+    margin-bottom: .075rem;
+    text-transform: uppercase;
+}
+.ticketInfo h4{
+    font-size: 1rem;
+    font-weight: 600;
+    padding-top: 0.3rem;
+    margin-bottom: .075rem;
+}
+.ticketInfo h5{
+    font-size: 1rem;
+    font-weight: 300;
+    padding-top: 0.3rem;
+    margin-bottom: .075rem;
+}
+.single_ticket_pricing{
+    border-left:1px solid #c1c1c1;
+}
+.single_ticket h4{
+    font-weight:600;
+    color:black;
+    font-size:0.8rem
+}
+.single_ticket ul li{
+    color: #6e6c6c;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.pricing h3{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4b4b4b;
+}
+.pricing h4{
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: darkgrey;
+}
+.cart i{
+    font-size: 1.2rem;
+    color:darkgray ;
+}
+.cart_border{
+    border: 1px solid #000;
+    width: 100%;
+    color: #fff;
+}
+.cart_border:hover{
+    border: 1px solid #000;
+    width: 100%;
+    color: #fff;
+}
+.cart_border a{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+}
+.cart_border a:hover{
+    color: #fff;
+}
+.buy_btn {
+    margin-top: 1.4rem;
+    text-align: center;
+}
+.quantity_input input{
+    border:1px solid  darkgrey ;
+    width: 100%;
+    border-radius: 0;
+    font-size: 1.5rem;
+}
+.ticket_image{
+    height:16rem; 
+    width:100%;
+}
+
+
+/*Payment*/
+.whole_invoice{
+    border-left:1px solid darkgrey;
+    border-right:1px solid darkgrey; 
+    background-color: whitesmoke;
+}
+.invoice_header{
+    background-color:#2d2d2d;
+    color:white;
+}
+.invoice_items{
+    border-bottom:1px solid darkgrey;
+}
+.single_invoice_item{
+    background-color:white;
+    border-bottom:1px solid darkgrey;
+}
+.single_invoice_item_image img{
+    width:5rem;
+    height:5rem;
+}
+.single_invoice_item_descrip{
+    text-align:center;
+}
+.total_payment{
+    float: right;
+    font-size:1.5rem; 
+    font-weight:600;
+}
+.ticket_submit_btn{
+    width:100%;
+    border: 1px solid #000;
+    background-color:#000;
+}
+.cart_buttons{
+    background-color: darkgrey;
+    border: 1px solid darkgrey;
+}
+
+
+/*payment details*/
+.instruction_title{
+    border-bottom:1px solid #c1c1c1;
+    background-color:white;
+}
+.instruction_text_active{
+    text-align: center;background-color:#fe4d55;
+}
+.user_details{
+    background-color:white;
+}
+.ticket_submit_btn{
+    width:100%;
+    border: 1px solid #000;
+    color: #fff;
+}
+.ticket_submit_btn:hover{
+    width:100%;
+    border: 1px solid #000;
+    color: whitesmoke;
+}
+.personal_details_form{
+    width:70% !important;
+}
+.personal_details_form input{
+    height: 4rem;
+}
+.personal_details_form input::placeholder{
+    color:darkgray;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.personal_details_form input::click{
+    border-color:#fe4d55;
+}
+
+
+/*Payment success*/
+.payment_success_title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.payment_success_icon{
+    font-size: 10rem;
+}
+.payment_success_box{
+    height:92vh;
+}
+.payment_success_box h3{
+    font-size: 1.3rem;
+}
+
+
+@media (max-width: 991px) {
+    .ticketInfo {
+        margin: auto;
+    }
+    .single_ticket_pricing{
+        border-left:0;
+    }
+    .single_invoice_item_image img{
+        width:3.3rem;
+        height:3.3rem;
+    }
+
+    .ticketInfo {
+        margin: auto;
+    }
+    .single_ticket_pricing{
+        border-left:0;
+    }
+    .single_invoice_item_image img{
+        width:3.3rem;
+        height:3.3rem;
+    }
+    .payment_success_box{
+        height:91vh;
+    }
+}
